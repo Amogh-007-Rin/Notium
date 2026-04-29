@@ -14,6 +14,7 @@ import {
 import { useUIStore } from '@/store/uiStore';
 import { useAuthStore } from '@/store/authStore';
 import toast from 'react-hot-toast';
+import Logo from '../logo/Logo';
 
 const NAV_ITEMS = [
   { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -61,11 +62,7 @@ export function Sidebar() {
         style={{ height: 56, borderBottom: '1px solid var(--border-subtle)' }}
       >
         <div className="flex items-center gap-2 min-w-0">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="shrink-0">
-            <rect width="28" height="28" rx="6" fill="var(--brand-primary)" fillOpacity="0.15" />
-            <path d="M7 7h3.5L14 18l3.5-11H21" stroke="var(--brand-primary)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="14" cy="21" r="1.5" fill="var(--brand-primary)" />
-          </svg>
+          <Logo></Logo>
           <AnimatePresence>
             {!sidebarCollapsed && (
               <motion.div
@@ -75,10 +72,10 @@ export function Sidebar() {
                 transition={{ duration: 0.2 }}
                 className="flex flex-col min-w-0"
               >
-                <span className="text-sm font-semibold tracking-tight truncate" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}>
+                <span className="text-xl mx-2 font-semibold tracking-tight truncate" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}>
                   Notium
                 </span>
-                <span className="text-xs font-mono" style={{ color: 'var(--brand-primary)', letterSpacing: '0.1em' }}>
+                <span className="text-xs mx-2 font-mono" style={{ color: 'var(--brand-primary)', letterSpacing: '0.1em' }}>
                   PIP
                 </span>
               </motion.div>
@@ -86,15 +83,6 @@ export function Sidebar() {
           </AnimatePresence>
         </div>
       </div>
-
-      {/* Collapse toggle */}
-      <button
-        onClick={toggleSidebar}
-        className="absolute -right-3 top-14 z-30 w-6 h-6 rounded-full flex items-center justify-center transition-colors"
-        style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border-default)', color: 'var(--text-muted)' }}
-      >
-        {sidebarCollapsed ? <ChevronRight size={12} /> : <ChevronLeft size={12} />}
-      </button>
 
       {/* Navigation */}
       <nav className="flex-1 px-2 py-3 overflow-y-auto overflow-x-hidden">

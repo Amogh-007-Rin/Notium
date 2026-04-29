@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Eye, EyeOff, LogIn, Package, BarChart2, Users } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import toast from 'react-hot-toast';
+import Logo from '@/components/logo/Logo';
 
 const DEMO_ACCOUNTS = [
   { label: 'CEO', email: 'ceo@notium.com', password: 'Notium2024!', role: 'Business Decision Maker' },
@@ -82,11 +83,7 @@ export function LoginPage() {
         {/* Logo & tagline */}
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-8">
-            <svg width="40" height="40" viewBox="0 0 28 28" fill="none">
-              <rect width="28" height="28" rx="6" fill="var(--brand-primary)" fillOpacity="0.2" />
-              <path d="M7 7h3.5L14 18l3.5-11H21" stroke="var(--brand-primary)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-              <circle cx="14" cy="21" r="1.5" fill="var(--brand-primary)" />
-            </svg>
+            <Logo/>
             <div>
               <p className="text-xl" style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}>
                 Notium
