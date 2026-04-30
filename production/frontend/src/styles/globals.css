@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base:        #080C14;
+  --bg-surface:     #0D1321;
+  --bg-elevated:    #131B2E;
+  --bg-subtle:      #1A2440;
+  --brand-primary:  #00C896;
+  --brand-secondary:#0EA5E9;
+  --brand-dim:      rgba(0,200,150,0.12);
+  --text-primary:   #F0F4FF;
+  --text-secondary: #8B9CBB;
+  --text-muted:     #4A5A7A;
+  --success:        #00C896;
+  --warning:        #F59E0B;
+  --danger:         #EF4444;
+  --info:           #0EA5E9;
+  --border-subtle:  rgba(255,255,255,0.06);
+  --border-default: rgba(255,255,255,0.10);
+  --border-strong:  rgba(255,255,255,0.18);
+  --risk-high:      #EF4444;
+  --risk-medium:    #F59E0B;
+  --risk-low:       #00C896;
+  --font-display:   'DM Serif Display', Georgia, serif;
+  --font-body:      'Geist', 'Helvetica Neue', sans-serif;
+  --font-mono:      'DM Mono', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.glass {
+  background: rgba(13,19,33,0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-default);
+}
+
+.glow-brand {
+  box-shadow: 0 0 20px rgba(0,200,150,0.25), 0 0 40px rgba(0,200,150,0.10);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--bg-subtle); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Skeleton pulse */
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-surface) 25%, var(--bg-elevated) 50%, var(--bg-surface) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Chart tooltip */
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Custom slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--bg-subtle);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,200,150,0.4);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  cursor: pointer;
+  border: none;
+}

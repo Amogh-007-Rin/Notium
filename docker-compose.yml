@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/db/notium.db
+      SECRET_KEY: notium-docker-secret-key-change-in-production-32chars
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: "480"
+      CORS_ORIGINS: "http://localhost,http://localhost:80"
+      ENVIRONMENT: development
+      SEED_ON_STARTUP: "true"
+      RETRAIN_MODELS_ON_STARTUP: "true"
+    volumes:
+      - sqlite_data:/app/db
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  sqlite_data:

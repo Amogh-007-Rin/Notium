@@ -1,0 +1,246 @@
+NOTIUM — DEPLOYMENT GUIDE
+Target: http://notium.reddx.me
+========================================================
+
+OVERVIEW
+--------
+The application runs as two Docker services:
+  - frontend  → Nginx serving the React build, proxies /api/* to backend
+  - backend   → FastAPI + Uvicorn on port 8000 (internal only)
+
+A single "docker compose build && docker compose up -d" spins both up.
+
+
+========================================================
+STEP 1 — POINT YOUR DNS
+========================================================
+
+In your DNS provider (wherever reddx.me is managed), add an A record:
+
+  Type : A
+  Name : notium
+  Value: <your server's public IP>
+  TTL  : 300 (or lowest available)
+
+Verify it resolves before proceeding:
+  ping notium.reddx.me
+
+
+========================================================
+STEP 2 — PROVISION THE SERVER
+========================================================
+
+A fresh Ubuntu 22.04 / 24.04 VPS works well. You need at least:
+  - 1 vCPU, 2 GB RAM (ML model training on startup needs ~1.5 GB)
+  - 10 GB disk
+
+SSH into the server, then install Docker:
+
+  curl -fsSL https://get.docker.com | sh
+  sudo usermod -aG docker $USER
+  newgrp docker
+
+Verify:
+  docker --version
+  docker compose version
+
+
+========================================================
+STEP 3 — COPY THE PROJECT TO THE SERVER
+========================================================
+
+Option A — Git (recommended):
+  git clone <your-repo-url> /opt/notium
+  cd /opt/notium
+
+Option B — SCP from your local machine:
+  scp -r /home/enjin/projects/Notium user@<server-ip>:/opt/notium
+  ssh user@<server-ip>
+  cd /opt/notium
+
+
+========================================================
+STEP 4 — EDIT docker-compose.yml FOR PRODUCTION
+========================================================
+
+Open /opt/notium/docker-compose.yml and make these changes:
+
+4a. Set CORS_ORIGINS to the production domain:
+
+  BEFORE:
+    CORS_ORIGINS: "http://localhost,http://localhost:80"
+
+  AFTER:
+    CORS_ORIGINS: "http://notium.reddx.me"
+
+4b. Replace the placeholder SECRET_KEY with a real random value.
+    Generate one with:
+
+      openssl rand -hex 32
+
+    Then paste the output:
+
+  BEFORE:
+    SECRET_KEY: notium-docker-secret-key-change-in-production-32chars
+
+  AFTER:
+    SECRET_KEY: <paste the openssl output here>
+
+4c. Change ENVIRONMENT to production:
+
+  BEFORE:
+    ENVIRONMENT: development
+
+  AFTER:
+    ENVIRONMENT: production
+
+4d. Remove the backend port exposure so port 8000 is NOT reachable
+    from the internet (Nginx proxies it internally):
+
+  REMOVE these two lines entirely:
+    ports:
+      - "8000:8000"
+
+After all edits the backend section should look like:
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      DATABASE_URL: sqlite:////app/db/notium.db
+      SECRET_KEY: <your-generated-key>
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: "480"
+      CORS_ORIGINS: "http://notium.reddx.me"
+      ENVIRONMENT: production
+      SEED_ON_STARTUP: "true"
+      RETRAIN_MODELS_ON_STARTUP: "true"
+    volumes:
+      - sqlite_data:/app/db
+
+
+========================================================
+STEP 5 — OPEN THE FIREWALL
+========================================================
+
+Allow HTTP traffic and keep SSH open:
+
+  sudo ufw allow 22/tcp
+  sudo ufw allow 80/tcp
+  sudo ufw enable
+  sudo ufw status
+
+If your cloud provider has a separate security group / firewall panel
+(AWS, GCP, Hetzner, etc.), also open port 80 inbound there.
+
+
+========================================================
+STEP 6 — BUILD AND DEPLOY
+========================================================
+
+From /opt/notium:
+
+  docker compose build
+  docker compose up -d
+
+What happens during build:
+  - Backend: Python 3.12-slim image, installs requirements.txt
+  - Frontend: Node 22 builds the React app with VITE_API_BASE_URL=/api,
+    then Nginx serves the static files
+
+The first "up -d" also trains the ML models and seeds the database —
+this takes 60–120 seconds. Watch it with:
+
+  docker compose logs -f backend
+
+You'll see "Application startup complete" when it's ready.
+
+
+========================================================
+STEP 7 — VERIFY THE DEPLOYMENT
+========================================================
+
+Check both containers are running:
+  docker compose ps
+
+Hit the health endpoint:
+  curl http://notium.reddx.me/api/health
+
+Open in browser:
+  http://notium.reddx.me
+
+Demo login credentials (all use password: Notium2024!):
+  ceo@notium.com
+  finance@notium.com
+  pm@notium.com
+
+
+========================================================
+STEP 8 — USEFUL OPERATIONS
+========================================================
+
+View live logs:
+  docker compose logs -f
+
+Restart a single service:
+  docker compose restart backend
+
+Stop everything:
+  docker compose down
+
+Stop and wipe the database volume (full reset):
+  docker compose down -v
+
+Redeploy after a code change:
+  docker compose build && docker compose up -d
+
+
+========================================================
+OPTIONAL — ENABLE HTTPS (recommended)
+========================================================
+
+To serve https://notium.reddx.me, install Certbot on the host and let
+it manage an Nginx reverse proxy in front of Docker.
+
+  sudo apt install nginx certbot python3-certbot-nginx -y
+
+  sudo nano /etc/nginx/sites-available/notium
+  # Add:
+  #   server {
+  #       server_name notium.reddx.me;
+  #       location / { proxy_pass http://localhost:80; proxy_set_header Host $host; }
+  #   }
+
+  sudo ln -s /etc/nginx/sites-available/notium /etc/nginx/sites-enabled/
+  sudo nginx -t && sudo nginx -s reload
+
+  sudo certbot --nginx -d notium.reddx.me
+
+Then update docker-compose.yml:
+  CORS_ORIGINS: "https://notium.reddx.me"
+
+And rebuild + restart:
+  docker compose build && docker compose up -d
+
+
+========================================================
+TROUBLESHOOTING
+========================================================
+
+Container won't start:
+  docker compose logs backend
+  docker compose logs frontend
+
+Port 80 already in use on the host:
+  sudo lsof -i :80
+  # Stop whatever is using it (often apache2 or nginx on the host)
+  sudo systemctl stop apache2   # or nginx
+  docker compose up -d
+
+Backend keeps restarting (OOM during ML training):
+  # Increase server RAM or set RETRAIN_MODELS_ON_STARTUP=false after first run
+
+CORS errors in the browser:
+  # Double-check CORS_ORIGINS in docker-compose.yml matches the exact
+  # origin the browser uses (include http:// and no trailing slash)
+  docker compose restart backend

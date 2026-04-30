@@ -1,0 +1,289 @@
+record_date,product_id,product_name,category,segment,revenue,cost,profit,discount_rate,quantity
+2022-01-01,P001,Enterprise Suite,Software,Enterprise,85000.0,54990.99,30009.01,0.0719,123
+2022-01-01,P002,Analytics Pro,Software,Mid-Market,61881.13,50681.93,11199.2,0.1483,91
+2022-01-01,P003,Basic Dashboard,Software,SME,39525.64,32417.66,7107.97,0.165,64
+2022-01-01,P004,Consulting Services,Services,Enterprise,126222.34,90546.7,35675.64,0.104,16
+2022-01-01,P005,Training Packages,Services,Mid-Market,24140.71,16720.46,7420.25,0.0519,43
+2022-01-01,P006,Hardware Bundle,Hardware,Enterprise,89850.22,67719.87,22130.36,0.0742,34
+2022-01-01,P007,Support Contracts,Services,SME,34922.74,23897.04,11025.69,0.0258,205
+2022-01-01,P008,Cloud Storage Add-on,Software,Mid-Market,20730.89,18072.06,2658.83,0.1278,342
+2022-02-01,P001,Enterprise Suite,Software,Enterprise,86000.0,56200.37,29799.63,0.0663,117
+2022-02-01,P002,Analytics Pro,Software,Mid-Market,61517.67,46594.75,14922.92,0.0891,83
+2022-02-01,P003,Basic Dashboard,Software,SME,38763.28,31533.7,7229.58,0.1637,62
+2022-02-01,P004,Consulting Services,Services,Enterprise,115247.35,81907.85,33339.5,0.0649,15
+2022-02-01,P005,Training Packages,Services,Mid-Market,25957.14,18053.92,7903.22,0.056,40
+2022-02-01,P006,Hardware Bundle,Hardware,Enterprise,91010.22,67472.63,23537.59,0.0882,28
+2022-02-01,P007,Support Contracts,Services,SME,34821.96,23901.4,10920.56,0.0242,214
+2022-02-01,P008,Cloud Storage Add-on,Software,Mid-Market,19411.19,16705.94,2705.25,0.1196,299
+2022-03-01,P001,Enterprise Suite,Software,Enterprise,87000.0,56308.98,30691.02,0.0777,125
+2022-03-01,P002,Analytics Pro,Software,Mid-Market,62158.12,48916.86,13241.27,0.1106,96
+2022-03-01,P003,Basic Dashboard,Software,SME,39713.04,33071.31,6641.73,0.1434,55
+2022-03-01,P004,Consulting Services,Services,Enterprise,125120.14,89373.69,35746.45,0.0896,13
+2022-03-01,P005,Training Packages,Services,Mid-Market,25329.97,17414.05,7915.91,0.0622,41
+2022-03-01,P006,Hardware Bundle,Hardware,Enterprise,88299.94,67572.5,20727.43,0.0636,25
+2022-03-01,P007,Support Contracts,Services,SME,35357.77,24209.26,11148.52,0.035,204
+2022-03-01,P008,Cloud Storage Add-on,Software,Mid-Market,23178.78,20088.87,3089.91,0.1067,302
+2022-04-01,P001,Enterprise Suite,Software,Enterprise,88000.0,57119.29,30880.71,0.0681,116
+2022-04-01,P002,Analytics Pro,Software,Mid-Market,58211.74,46566.19,11645.55,0.1436,82
+2022-04-01,P003,Basic Dashboard,Software,SME,39432.76,31822.54,7610.22,0.1979,63
+2022-04-01,P004,Consulting Services,Services,Enterprise,114245.34,83195.46,31049.89,0.0387,13
+2022-04-01,P005,Training Packages,Services,Mid-Market,26097.45,19169.79,6927.66,0.0592,40
+2022-04-01,P006,Hardware Bundle,Hardware,Enterprise,88646.12,70112.09,18534.03,0.0903,27
+2022-04-01,P007,Support Contracts,Services,SME,35287.77,23987.97,11299.8,0.0375,197
+2022-04-01,P008,Cloud Storage Add-on,Software,Mid-Market,21381.58,18739.12,2642.45,0.0829,344
+2022-05-01,P001,Enterprise Suite,Software,Enterprise,89000.0,56903.32,32096.68,0.0572,131
+2022-05-01,P002,Analytics Pro,Software,Mid-Market,58765.33,46588.86,12176.47,0.1448,86
+2022-05-01,P003,Basic Dashboard,Software,SME,37934.97,30865.73,7069.24,0.1223,52
+2022-05-01,P004,Consulting Services,Services,Enterprise,114161.08,80764.34,33396.75,0.0374,20
+2022-05-01,P005,Training Packages,Services,Mid-Market,28256.72,19545.51,8711.21,0.0672,31
+2022-05-01,P006,Hardware Bundle,Hardware,Enterprise,91374.56,71478.56,19896.0,0.0808,27
+2022-05-01,P007,Support Contracts,Services,SME,35158.18,23532.78,11625.4,0.0469,198
+2022-05-01,P008,Cloud Storage Add-on,Software,Mid-Market,22500.12,20553.72,1946.4,0.1271,321
+2022-06-01,P001,Enterprise Suite,Software,Enterprise,90000.0,56651.72,33348.28,0.0884,130
+2022-06-01,P002,Analytics Pro,Software,Mid-Market,60429.98,48567.51,11862.47,0.0826,84
+2022-06-01,P003,Basic Dashboard,Software,SME,43192.7,35772.8,7419.91,0.2008,55
+2022-06-01,P004,Consulting Services,Services,Enterprise,130309.73,91816.49,38493.24,0.0764,14
+2022-06-01,P005,Training Packages,Services,Mid-Market,24773.78,17120.63,7653.15,0.0513,35
+2022-06-01,P006,Hardware Bundle,Hardware,Enterprise,86880.47,66598.07,20282.4,0.0899,30
+2022-06-01,P007,Support Contracts,Services,SME,35226.4,23853.26,11373.13,0.0295,202
+2022-06-01,P008,Cloud Storage Add-on,Software,Mid-Market,24892.43,21354.58,3537.86,0.0866,359
+2022-07-01,P001,Enterprise Suite,Software,Enterprise,91000.0,58671.26,32328.74,0.0968,120
+2022-07-01,P002,Analytics Pro,Software,Mid-Market,65016.14,48471.27,16544.87,0.0907,86
+2022-07-01,P003,Basic Dashboard,Software,SME,42192.17,35064.66,7127.5,0.151,63
+2022-07-01,P004,Consulting Services,Services,Enterprise,120271.73,86620.29,33651.44,0.043,16
+2022-07-01,P005,Training Packages,Services,Mid-Market,26921.77,18796.46,8125.3,0.0703,31
+2022-07-01,P006,Hardware Bundle,Hardware,Enterprise,90710.99,71740.11,18970.88,0.0832,26
+2022-07-01,P007,Support Contracts,Services,SME,35175.8,23597.36,11578.43,0.0422,200
+2022-07-01,P008,Cloud Storage Add-on,Software,Mid-Market,25888.8,22951.81,2937.0,0.1142,345
+2022-08-01,P001,Enterprise Suite,Software,Enterprise,92000.0,58201.59,33798.41,0.0643,124
+2022-08-01,P002,Analytics Pro,Software,Mid-Market,61552.28,47712.26,13840.03,0.1244,81
+2022-08-01,P003,Basic Dashboard,Software,SME,40135.73,32819.7,7316.03,0.2166,69
+2022-08-01,P004,Consulting Services,Services,Enterprise,117174.05,85712.27,31461.78,0.0721,13
+2022-08-01,P005,Training Packages,Services,Mid-Market,25915.61,17515.91,8399.69,0.0749,37
+2022-08-01,P006,Hardware Bundle,Hardware,Enterprise,84558.13,66061.32,18496.81,0.0842,27
+2022-08-01,P007,Support Contracts,Services,SME,34961.57,23806.82,11154.75,0.046,185
+2022-08-01,P008,Cloud Storage Add-on,Software,Mid-Market,32258.49,29218.08,3040.41,0.1322,376
+2022-09-01,P001,Enterprise Suite,Software,Enterprise,93000.0,57323.14,35676.86,0.0533,127
+2022-09-01,P002,Analytics Pro,Software,Mid-Market,62968.83,46938.6,16030.22,0.1017,88
+2022-09-01,P003,Basic Dashboard,Software,SME,41166.01,33577.15,7588.86,0.1485,59
+2022-09-01,P004,Consulting Services,Services,Enterprise,113572.26,82854.03,30718.24,0.035,15
+2022-09-01,P005,Training Packages,Services,Mid-Market,25130.39,17354.27,7776.12,0.0704,40
+2022-09-01,P006,Hardware Bundle,Hardware,Enterprise,92198.13,72000.92,20197.21,0.095,27
+2022-09-01,P007,Support Contracts,Services,SME,35615.39,24253.11,11362.28,0.0275,215
+2022-09-01,P008,Cloud Storage Add-on,Software,Mid-Market,29914.55,26781.33,3133.22,0.1062,350
+2022-10-01,P001,Enterprise Suite,Software,Enterprise,94000.0,61662.24,32337.76,0.0917,131
+2022-10-01,P002,Analytics Pro,Software,Mid-Market,78531.72,63994.84,14536.87,0.1391,116
+2022-10-01,P003,Basic Dashboard,Software,SME,38334.35,31614.93,6719.43,0.1979,60
+2022-10-01,P004,Consulting Services,Services,Enterprise,122805.49,88928.31,33877.18,0.0782,15
+2022-10-01,P005,Training Packages,Services,Mid-Market,27242.92,20468.51,6774.41,0.0616,40
+2022-10-01,P006,Hardware Bundle,Hardware,Enterprise,92173.7,73134.14,19039.56,0.0791,31
+2022-10-01,P007,Support Contracts,Services,SME,36377.96,25295.0,11082.96,0.031,196
+2022-10-01,P008,Cloud Storage Add-on,Software,Mid-Market,30163.07,27178.67,2984.39,0.1008,377
+2022-11-01,P001,Enterprise Suite,Software,Enterprise,95000.0,60653.62,34346.38,0.074,137
+2022-11-01,P002,Analytics Pro,Software,Mid-Market,78735.32,58667.36,20067.95,0.1257,119
+2022-11-01,P003,Basic Dashboard,Software,SME,39555.14,32408.9,7146.25,0.1488,64
+2022-11-01,P004,Consulting Services,Services,Enterprise,116287.86,80088.14,36199.71,0.1075,15
+2022-11-01,P005,Training Packages,Services,Mid-Market,27028.39,18513.98,8514.41,0.0718,42
+2022-11-01,P006,Hardware Bundle,Hardware,Enterprise,86712.45,68618.95,18093.5,0.0984,27
+2022-11-01,P007,Support Contracts,Services,SME,36327.04,24470.79,11856.25,0.0439,189
+2022-11-01,P008,Cloud Storage Add-on,Software,Mid-Market,31494.14,28481.13,3013.01,0.0867,363
+2022-12-01,P001,Enterprise Suite,Software,Enterprise,96000.0,60687.47,35312.53,0.0786,121
+2022-12-01,P002,Analytics Pro,Software,Mid-Market,78751.59,61312.79,17438.81,0.1359,125
+2022-12-01,P003,Basic Dashboard,Software,SME,36905.14,30480.36,6424.78,0.132,52
+2022-12-01,P004,Consulting Services,Services,Enterprise,138093.31,97392.48,40700.83,0.0677,13
+2022-12-01,P005,Training Packages,Services,Mid-Market,26756.62,18157.86,8598.76,0.077,40
+2022-12-01,P006,Hardware Bundle,Hardware,Enterprise,92382.46,74946.83,17435.63,0.0726,29
+2022-12-01,P007,Support Contracts,Services,SME,35820.27,23999.64,11820.63,0.0331,198
+2022-12-01,P008,Cloud Storage Add-on,Software,Mid-Market,35534.34,31798.68,3735.66,0.1455,366
+2023-01-01,P001,Enterprise Suite,Software,Enterprise,97000.0,61565.8,35434.2,0.0688,140
+2023-01-01,P002,Analytics Pro,Software,Mid-Market,65142.16,49714.12,15428.03,0.0883,108
+2023-01-01,P003,Basic Dashboard,Software,SME,39692.26,33342.89,6349.36,0.1788,57
+2023-01-01,P004,Consulting Services,Services,Enterprise,127720.19,85268.29,42451.89,0.1043,11
+2023-01-01,P005,Training Packages,Services,Mid-Market,24427.29,17487.08,6940.22,0.0591,42
+2023-01-01,P006,Hardware Bundle,Hardware,Enterprise,92543.11,76464.24,16078.87,0.0999,30
+2023-01-01,P007,Support Contracts,Services,SME,35449.83,23943.03,11506.8,0.0232,201
+2023-01-01,P008,Cloud Storage Add-on,Software,Mid-Market,35234.55,30844.88,4389.67,0.082,354
+2023-02-01,P001,Enterprise Suite,Software,Enterprise,98000.0,63148.02,34851.98,0.0888,138
+2023-02-01,P002,Analytics Pro,Software,Mid-Market,62926.8,48427.0,14499.8,0.0825,89
+2023-02-01,P003,Basic Dashboard,Software,SME,41244.28,34642.33,6601.95,0.2001,52
+2023-02-01,P004,Consulting Services,Services,Enterprise,108759.64,81257.65,27501.99,0.1021,14
+2023-02-01,P005,Training Packages,Services,Mid-Market,26312.08,17845.26,8466.81,0.0751,39
+2023-02-01,P006,Hardware Bundle,Hardware,Enterprise,95917.9,76749.42,19168.48,0.094,27
+2023-02-01,P007,Support Contracts,Services,SME,35002.59,24112.63,10889.96,0.0281,208
+2023-02-01,P008,Cloud Storage Add-on,Software,Mid-Market,38298.68,34761.56,3537.13,0.0838,353
+2023-03-01,P001,Enterprise Suite,Software,Enterprise,99000.0,63088.05,35911.95,0.0942,126
+2023-03-01,P002,Analytics Pro,Software,Mid-Market,65856.59,52165.01,13691.58,0.0928,81
+2023-03-01,P003,Basic Dashboard,Software,SME,39018.58,31828.27,7190.3,0.1836,61
+2023-03-01,P004,Consulting Services,Services,Enterprise,130895.37,87329.93,43565.45,0.0571,10
+2023-03-01,P005,Training Packages,Services,Mid-Market,27267.22,19267.83,7999.39,0.0782,41
+2023-03-01,P006,Hardware Bundle,Hardware,Enterprise,91606.59,73195.91,18410.68,0.079,38
+2023-03-01,P007,Support Contracts,Services,SME,35834.69,24310.19,11524.5,0.0291,191
+2023-03-01,P008,Cloud Storage Add-on,Software,Mid-Market,36666.14,32285.17,4380.97,0.1088,363
+2023-04-01,P001,Enterprise Suite,Software,Enterprise,100000.0,65732.42,34267.58,0.0794,131
+2023-04-01,P002,Analytics Pro,Software,Mid-Market,63368.36,49798.91,13569.46,0.1132,98
+2023-04-01,P003,Basic Dashboard,Software,SME,38556.86,31482.56,7074.3,0.1902,58
+2023-04-01,P004,Consulting Services,Services,Enterprise,130054.03,90417.88,39636.16,0.1009,18
+2023-04-01,P005,Training Packages,Services,Mid-Market,25143.78,17597.46,7546.32,0.0608,40
+2023-04-01,P006,Hardware Bundle,Hardware,Enterprise,96442.5,77941.9,18500.6,0.0968,29
+2023-04-01,P007,Support Contracts,Services,SME,35771.94,24603.75,11168.18,0.0294,191
+2023-04-01,P008,Cloud Storage Add-on,Software,Mid-Market,38474.03,33022.04,5451.99,0.0839,379
+2023-05-01,P001,Enterprise Suite,Software,Enterprise,101000.0,64268.07,36731.93,0.0586,142
+2023-05-01,P002,Analytics Pro,Software,Mid-Market,60908.62,47917.55,12991.07,0.1379,78
+2023-05-01,P003,Basic Dashboard,Software,SME,41557.22,33840.27,7716.96,0.1801,51
+2023-05-01,P004,Consulting Services,Services,Enterprise,105426.63,78199.13,27227.5,0.1196,16
+2023-05-01,P005,Training Packages,Services,Mid-Market,25811.86,17828.21,7983.65,0.0712,38
+2023-05-01,P006,Hardware Bundle,Hardware,Enterprise,92584.15,75522.93,17061.22,0.0684,31
+2023-05-01,P007,Support Contracts,Services,SME,36248.45,24898.47,11349.98,0.0451,216
+2023-05-01,P008,Cloud Storage Add-on,Software,Mid-Market,36345.42,32629.24,3716.18,0.1493,387
+2023-06-01,P001,Enterprise Suite,Software,Enterprise,102000.0,63877.25,38122.75,0.0696,146
+2023-06-01,P002,Analytics Pro,Software,Mid-Market,65120.11,50457.37,14662.74,0.1129,87
+2023-06-01,P003,Basic Dashboard,Software,SME,37585.46,31239.96,6345.5,0.1245,50
+2023-06-01,P004,Consulting Services,Services,Enterprise,134814.05,99971.48,34842.58,0.0828,7
+2023-06-01,P005,Training Packages,Services,Mid-Market,25670.58,18835.26,6835.32,0.0753,40
+2023-06-01,P006,Hardware Bundle,Hardware,Enterprise,91890.89,75632.41,16258.48,0.0905,30
+2023-06-01,P007,Support Contracts,Services,SME,35467.16,23866.97,11600.19,0.0302,203
+2023-06-01,P008,Cloud Storage Add-on,Software,Mid-Market,40541.64,35436.3,5105.34,0.1396,395
+2023-07-01,P001,Enterprise Suite,Software,Enterprise,103000.0,66206.87,36793.13,0.0794,135
+2023-07-01,P002,Analytics Pro,Software,Mid-Market,62653.91,49983.79,12670.13,0.1079,92
+2023-07-01,P003,Basic Dashboard,Software,SME,38559.57,32304.04,6255.53,0.1539,61
+2023-07-01,P004,Consulting Services,Services,Enterprise,129008.53,96255.41,32753.12,0.0703,15
+2023-07-01,P005,Training Packages,Services,Mid-Market,25094.73,17600.43,7494.3,0.0583,36
+2023-07-01,P006,Hardware Bundle,Hardware,Enterprise,93140.96,79271.94,13869.02,0.0848,34
+2023-07-01,P007,Support Contracts,Services,SME,35902.31,24283.08,11619.23,0.0416,188
+2023-07-01,P008,Cloud Storage Add-on,Software,Mid-Market,39983.87,36043.17,3940.7,0.088,442
+2023-08-01,P001,Enterprise Suite,Software,Enterprise,104000.0,67694.54,36305.46,0.0777,142
+2023-08-01,P002,Analytics Pro,Software,Mid-Market,68650.8,55225.97,13424.84,0.1002,104
+2023-08-01,P003,Basic Dashboard,Software,SME,35490.93,30037.88,5453.06,0.1977,54
+2023-08-01,P004,Consulting Services,Services,Enterprise,137357.95,97569.97,39787.98,0.118,16
+2023-08-01,P005,Training Packages,Services,Mid-Market,26051.03,17571.71,8479.32,0.0667,37
+2023-08-01,P006,Hardware Bundle,Hardware,Enterprise,94337.68,76483.47,17854.21,0.0615,23
+2023-08-01,P007,Support Contracts,Services,SME,36354.73,25097.24,11257.49,0.0403,185
+2023-08-01,P008,Cloud Storage Add-on,Software,Mid-Market,42606.93,38181.43,4425.5,0.1318,422
+2023-09-01,P001,Enterprise Suite,Software,Enterprise,105000.0,66796.27,38203.73,0.0617,150
+2023-09-01,P002,Analytics Pro,Software,Mid-Market,64832.98,50528.09,14304.89,0.116,85
+2023-09-01,P003,Basic Dashboard,Software,SME,38160.99,32143.23,6017.76,0.2096,62
+2023-09-01,P004,Consulting Services,Services,Enterprise,123103.88,100515.7,22588.18,0.0613,22
+2023-09-01,P005,Training Packages,Services,Mid-Market,26309.02,19435.44,6873.58,0.0619,38
+2023-09-01,P006,Hardware Bundle,Hardware,Enterprise,92287.37,78653.55,13633.82,0.0634,32
+2023-09-01,P007,Support Contracts,Services,SME,35395.65,23821.56,11574.09,0.05,201
+2023-09-01,P008,Cloud Storage Add-on,Software,Mid-Market,42182.49,37240.39,4942.1,0.1202,379
+2023-10-01,P001,Enterprise Suite,Software,Enterprise,106000.0,67453.75,38546.25,0.0958,153
+2023-10-01,P002,Analytics Pro,Software,Mid-Market,80651.65,60217.93,20433.72,0.0847,117
+2023-10-01,P003,Basic Dashboard,Software,SME,37419.1,31772.2,5646.9,0.1835,60
+2023-10-01,P004,Consulting Services,Services,Enterprise,129409.67,101933.21,27476.45,0.0977,12
+2023-10-01,P005,Training Packages,Services,Mid-Market,26457.66,18563.53,7894.13,0.0571,33
+2023-10-01,P006,Hardware Bundle,Hardware,Enterprise,94446.2,79755.51,14690.69,0.0897,33
+2023-10-01,P007,Support Contracts,Services,SME,36336.18,24968.0,11368.18,0.0272,208
+2023-10-01,P008,Cloud Storage Add-on,Software,Mid-Market,44698.7,37204.87,7493.83,0.1193,427
+2023-11-01,P001,Enterprise Suite,Software,Enterprise,107000.0,68383.47,38616.53,0.0719,148
+2023-11-01,P002,Analytics Pro,Software,Mid-Market,83789.16,66229.17,17559.99,0.137,108
+2023-11-01,P003,Basic Dashboard,Software,SME,35772.6,30357.33,5415.27,0.1762,61
+2023-11-01,P004,Consulting Services,Services,Enterprise,128900.7,94998.65,33902.05,0.0761,14
+2023-11-01,P005,Training Packages,Services,Mid-Market,27837.77,20740.13,7097.64,0.0531,36
+2023-11-01,P006,Hardware Bundle,Hardware,Enterprise,86181.79,73881.3,12300.49,0.0782,29
+2023-11-01,P007,Support Contracts,Services,SME,36813.63,25123.48,11690.14,0.0233,199
+2023-11-01,P008,Cloud Storage Add-on,Software,Mid-Market,47241.2,42494.37,4746.84,0.0945,436
+2023-12-01,P001,Enterprise Suite,Software,Enterprise,108000.0,69019.83,38980.17,0.0708,146
+2023-12-01,P002,Analytics Pro,Software,Mid-Market,82974.76,66438.02,16536.74,0.0801,110
+2023-12-01,P003,Basic Dashboard,Software,SME,34087.59,29413.91,4673.68,0.1631,51
+2023-12-01,P004,Consulting Services,Services,Enterprise,124964.61,90455.28,34509.33,0.059,8
+2023-12-01,P005,Training Packages,Services,Mid-Market,25474.79,18302.56,7172.23,0.0568,41
+2023-12-01,P006,Hardware Bundle,Hardware,Enterprise,95587.67,82664.52,12923.14,0.0784,31
+2023-12-01,P007,Support Contracts,Services,SME,36343.42,24514.1,11829.33,0.0241,202
+2023-12-01,P008,Cloud Storage Add-on,Software,Mid-Market,46601.95,40284.81,6317.14,0.0822,399
+2024-01-01,P001,Enterprise Suite,Software,Enterprise,109000.0,71804.67,37195.33,0.0621,153
+2024-01-01,P002,Analytics Pro,Software,Mid-Market,64815.9,52967.34,11848.56,0.0803,97
+2024-01-01,P003,Basic Dashboard,Software,SME,38093.53,32208.95,5884.58,0.1973,47
+2024-01-01,P004,Consulting Services,Services,Enterprise,133805.9,97941.98,35863.92,0.0709,21
+2024-01-01,P005,Training Packages,Services,Mid-Market,28842.31,19534.29,9308.02,0.0744,43
+2024-01-01,P006,Hardware Bundle,Hardware,Enterprise,95347.45,79820.03,15527.42,0.0687,32
+2024-01-01,P007,Support Contracts,Services,SME,36741.44,24750.17,11991.27,0.0209,182
+2024-01-01,P008,Cloud Storage Add-on,Software,Mid-Market,47595.81,42413.76,5182.05,0.1308,470
+2024-02-01,P001,Enterprise Suite,Software,Enterprise,110000.0,68026.68,41973.32,0.0659,149
+2024-02-01,P002,Analytics Pro,Software,Mid-Market,69844.11,54461.57,15382.54,0.0901,81
+2024-02-01,P003,Basic Dashboard,Software,SME,35478.34,30281.14,5197.21,0.2192,51
+2024-02-01,P004,Consulting Services,Services,Enterprise,133647.88,86616.86,47031.02,0.0826,15
+2024-02-01,P005,Training Packages,Services,Mid-Market,27391.64,19149.93,8241.71,0.0661,35
+2024-02-01,P006,Hardware Bundle,Hardware,Enterprise,93118.27,80540.04,12578.23,0.0838,32
+2024-02-01,P007,Support Contracts,Services,SME,36624.2,25558.83,11065.38,0.0205,209
+2024-02-01,P008,Cloud Storage Add-on,Software,Mid-Market,50689.88,43567.1,7122.78,0.0978,425
+2024-03-01,P001,Enterprise Suite,Software,Enterprise,111000.0,71703.76,39296.24,0.0698,151
+2024-03-01,P002,Analytics Pro,Software,Mid-Market,70003.23,53062.48,16940.75,0.1331,80
+2024-03-01,P003,Basic Dashboard,Software,SME,33889.91,28988.43,4901.48,0.1212,47
+2024-03-01,P004,Consulting Services,Services,Enterprise,136880.22,101313.03,35567.19,0.0385,15
+2024-03-01,P005,Training Packages,Services,Mid-Market,26826.58,18647.64,8178.94,0.0545,35
+2024-03-01,P006,Hardware Bundle,Hardware,Enterprise,92270.56,76145.77,16124.79,0.0944,31
+2024-03-01,P007,Support Contracts,Services,SME,35904.67,25175.16,10729.52,0.042,200
+2024-03-01,P008,Cloud Storage Add-on,Software,Mid-Market,49776.12,43920.07,5856.05,0.1319,395
+2024-04-01,P001,Enterprise Suite,Software,Enterprise,112000.0,70628.55,41371.45,0.0785,145
+2024-04-01,P002,Analytics Pro,Software,Mid-Market,66954.67,53232.84,13721.84,0.1359,87
+2024-04-01,P003,Basic Dashboard,Software,SME,35995.51,30329.73,5665.78,0.1223,59
+2024-04-01,P004,Consulting Services,Services,Enterprise,135713.18,88193.53,47519.65,0.1099,15
+2024-04-01,P005,Training Packages,Services,Mid-Market,27679.76,17616.03,10063.73,0.0674,37
+2024-04-01,P006,Hardware Bundle,Hardware,Enterprise,96764.14,83723.88,13040.26,0.0787,33
+2024-04-01,P007,Support Contracts,Services,SME,36558.4,24757.87,11800.53,0.0239,203
+2024-04-01,P008,Cloud Storage Add-on,Software,Mid-Market,51707.07,47505.32,4201.75,0.1468,434
+2024-05-01,P001,Enterprise Suite,Software,Enterprise,113000.0,73271.8,39728.2,0.0877,152
+2024-05-01,P002,Analytics Pro,Software,Mid-Market,66612.99,50850.98,15762.01,0.093,86
+2024-05-01,P003,Basic Dashboard,Software,SME,32462.69,28075.87,4386.82,0.1245,43
+2024-05-01,P004,Consulting Services,Services,Enterprise,141794.26,101734.53,40059.73,0.0746,9
+2024-05-01,P005,Training Packages,Services,Mid-Market,27387.68,19292.41,8095.27,0.0729,39
+2024-05-01,P006,Hardware Bundle,Hardware,Enterprise,94676.68,79816.89,14859.79,0.0993,25
+2024-05-01,P007,Support Contracts,Services,SME,36053.34,24412.11,11641.23,0.0291,195
+2024-05-01,P008,Cloud Storage Add-on,Software,Mid-Market,46996.6,42958.65,4037.95,0.1232,448
+2024-06-01,P001,Enterprise Suite,Software,Enterprise,114000.0,72676.42,41323.58,0.0627,151
+2024-06-01,P002,Analytics Pro,Software,Mid-Market,70384.39,55851.45,14532.95,0.1315,93
+2024-06-01,P003,Basic Dashboard,Software,SME,30522.25,26369.14,4153.11,0.196,47
+2024-06-01,P004,Consulting Services,Services,Enterprise,149277.64,111195.17,38082.47,0.0409,14
+2024-06-01,P005,Training Packages,Services,Mid-Market,26208.7,18309.44,7899.26,0.0754,36
+2024-06-01,P006,Hardware Bundle,Hardware,Enterprise,95333.96,81499.89,13834.07,0.0698,33
+2024-06-01,P007,Support Contracts,Services,SME,37235.9,24785.59,12450.31,0.0359,213
+2024-06-01,P008,Cloud Storage Add-on,Software,Mid-Market,49381.26,43769.48,5611.78,0.1458,468
+2024-07-01,P001,Enterprise Suite,Software,Enterprise,115000.0,73435.74,41564.26,0.0759,163
+2024-07-01,P002,Analytics Pro,Software,Mid-Market,68231.99,52656.27,15575.72,0.1104,90
+2024-07-01,P003,Basic Dashboard,Software,SME,32320.45,28014.53,4305.93,0.1682,55
+2024-07-01,P004,Consulting Services,Services,Enterprise,139619.82,97233.77,42386.05,0.0487,14
+2024-07-01,P005,Training Packages,Services,Mid-Market,28511.72,19464.4,9047.32,0.0775,43
+2024-07-01,P006,Hardware Bundle,Hardware,Enterprise,95758.01,81010.69,14747.32,0.076,28
+2024-07-01,P007,Support Contracts,Services,SME,36882.21,26160.77,10721.44,0.0445,163
+2024-07-01,P008,Cloud Storage Add-on,Software,Mid-Market,50838.79,44278.79,6560.0,0.1444,448
+2024-08-01,P001,Enterprise Suite,Software,Enterprise,116000.0,74171.18,41828.82,0.0671,153
+2024-08-01,P002,Analytics Pro,Software,Mid-Market,73342.98,57210.34,16132.64,0.1356,102
+2024-08-01,P003,Basic Dashboard,Software,SME,31993.68,28305.1,3688.58,0.1839,46
+2024-08-01,P004,Consulting Services,Services,Enterprise,126796.35,92590.92,34205.44,0.0356,17
+2024-08-01,P005,Training Packages,Services,Mid-Market,27691.75,19540.85,8150.9,0.069,40
+2024-08-01,P006,Hardware Bundle,Hardware,Enterprise,96279.01,86072.88,10206.13,0.089,34
+2024-08-01,P007,Support Contracts,Services,SME,36565.26,25382.45,11182.81,0.0342,204
+2024-08-01,P008,Cloud Storage Add-on,Software,Mid-Market,52367.14,45842.74,6524.4,0.1275,484
+2024-09-01,P001,Enterprise Suite,Software,Enterprise,117000.0,73171.15,43828.85,0.0725,158
+2024-09-01,P002,Analytics Pro,Software,Mid-Market,68537.62,54121.13,14416.49,0.1012,101
+2024-09-01,P003,Basic Dashboard,Software,SME,33974.41,29386.72,4587.69,0.1603,47
+2024-09-01,P004,Consulting Services,Services,Enterprise,144420.3,103282.59,41137.71,0.1116,17
+2024-09-01,P005,Training Packages,Services,Mid-Market,27683.57,19782.29,7901.29,0.0622,42
+2024-09-01,P006,Hardware Bundle,Hardware,Enterprise,94580.41,82398.05,12182.35,0.0867,28
+2024-09-01,P007,Support Contracts,Services,SME,37206.7,25159.6,12047.1,0.0298,214
+2024-09-01,P008,Cloud Storage Add-on,Software,Mid-Market,55569.94,50741.02,4828.92,0.0973,462
+2024-10-01,P001,Enterprise Suite,Software,Enterprise,118000.0,74413.29,43586.71,0.0638,156
+2024-10-01,P002,Analytics Pro,Software,Mid-Market,85667.98,66238.69,19429.28,0.1437,115
+2024-10-01,P003,Basic Dashboard,Software,SME,31692.77,28606.61,3086.17,0.2153,33
+2024-10-01,P004,Consulting Services,Services,Enterprise,139145.62,100210.63,38934.99,0.0588,18
+2024-10-01,P005,Training Packages,Services,Mid-Market,28031.35,19902.46,8128.89,0.0507,37
+2024-10-01,P006,Hardware Bundle,Hardware,Enterprise,94710.11,81666.37,13043.73,0.0778,33
+2024-10-01,P007,Support Contracts,Services,SME,37224.41,25668.02,11556.4,0.0363,206
+2024-10-01,P008,Cloud Storage Add-on,Software,Mid-Market,57918.14,51851.01,6067.13,0.0971,477
+2024-11-01,P001,Enterprise Suite,Software,Enterprise,119000.0,74392.31,44607.69,0.0922,161
+2024-11-01,P002,Analytics Pro,Software,Mid-Market,82230.77,64475.62,17755.16,0.1334,132
+2024-11-01,P003,Basic Dashboard,Software,SME,28188.31,24530.91,3657.4,0.1845,45
+2024-11-01,P004,Consulting Services,Services,Enterprise,140375.35,98573.11,41802.25,0.0669,19
+2024-11-01,P005,Training Packages,Services,Mid-Market,27457.81,18598.7,8859.12,0.055,39
+2024-11-01,P006,Hardware Bundle,Hardware,Enterprise,91641.26,80360.17,11281.08,0.0936,29
+2024-11-01,P007,Support Contracts,Services,SME,36844.41,25464.88,11379.54,0.0317,184
+2024-11-01,P008,Cloud Storage Add-on,Software,Mid-Market,57031.39,49928.94,7102.44,0.1096,550
+2024-12-01,P001,Enterprise Suite,Software,Enterprise,120000.0,76303.9,43696.1,0.099,161
+2024-12-01,P002,Analytics Pro,Software,Mid-Market,84697.5,65331.26,19366.24,0.0989,113
+2024-12-01,P003,Basic Dashboard,Software,SME,29127.5,26284.11,2843.39,0.2033,46
+2024-12-01,P004,Consulting Services,Services,Enterprise,137786.4,102491.53,35294.87,0.0751,17
+2024-12-01,P005,Training Packages,Services,Mid-Market,28180.36,20096.01,8084.35,0.08,39
+2024-12-01,P006,Hardware Bundle,Hardware,Enterprise,99737.56,87779.91,11957.65,0.0991,34
+2024-12-01,P007,Support Contracts,Services,SME,37565.05,25313.55,12251.5,0.0215,205
+2024-12-01,P008,Cloud Storage Add-on,Software,Mid-Market,57805.32,50058.58,7746.75,0.1382,484
