@@ -2,8 +2,6 @@ services:
   backend:
     build:
       context: ./backend
-    ports:
-      - "8000:8000"
     environment:
       DATABASE_URL: sqlite:////app/db/notium.db
       SECRET_KEY: notium-docker-secret-key-change-in-production-32chars
